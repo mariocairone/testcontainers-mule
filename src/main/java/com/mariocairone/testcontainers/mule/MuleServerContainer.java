@@ -34,21 +34,25 @@ public class MuleServerContainer extends GenericContainer<MuleServerContainer> {
     
  
 	public MuleServerContainer() {
-	    this(DEFAULT_IMAGE_NAME + ":" + DEFAULT_TAG);
+	    this(DEFAULT_TAG);
 	}
 	
-	public MuleServerContainer(String image) {
-	    super(image);
+	
+	public MuleServerContainer(String version) {
+	    this(DEFAULT_IMAGE_NAME,version);
+	}
+
+	public MuleServerContainer(String image,String version) {
+	    super(image + ":" + version);
 	    muleArgs = new StringBuilder();
 	    this.deployedApplications = new ArrayList<>();
-	}
+	}	
 	
 	@Override
 	protected void configure() {	
 		super.configure(); 	
 		withEnv(MULE_ARGS_VAR_NAME,muleArgs.toString());
 		copyApplicationsToMuleAppsFolder();
-		
 	}
 
 	
