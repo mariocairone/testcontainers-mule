@@ -61,7 +61,7 @@ public class MuleServerContainer extends GenericContainer<MuleServerContainer> {
 	 * @param folder the root folder to scan  
 	 * @param pattern the application pattern to search
 	 * @return
-	 * 
+	 * this
 	 */
 	public MuleServerContainer withDeployedApplications (
 	        final String folder,final String pattern)  {   
