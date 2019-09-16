@@ -2,13 +2,13 @@
 ![Maven Central](https://img.shields.io/maven-central/v/com.mariocairone.mule/testcontainers-mule?style=flat-square) ![GitHub](https://img.shields.io/github/license/mariocairone/testcontainers-mule) ![GitHub issues](https://img.shields.io/github/issues/mariocairone/testcontainers-mule) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mariocairone/testcontainers-mule?style=social)
 ## Docker Image
 
-Mulesoft do not provide an official docker images for the mule runtime.
+MuleSoft do not provide an official docker image for the Mule runtime.
 
-The module will use by default the docker image [mariocairone/mule-ee:latest](https://cloud.docker.com/repository/docker/mariocairone/mule-ee).
+The module will use the docker image [mariocairone/mule-ee:latest](https://cloud.docker.com/repository/docker/mariocairone/mule-ee) by default.
 
 ## Setup
 
-As a dependency of your Maven project:
+As a dependency on your Maven project:
 
 ```xml
 <dependency>
@@ -18,14 +18,14 @@ As a dependency of your Maven project:
 </dependency>
 ```
 
-You can also build the `.jar` file yourself, assuming you have Maven and JDK 1.8+ installed:
+You can also build the `.jar` file yourself, assuming you that have Maven and JDK 1.8+ installed:
 ```shell
 mvn clean install
 ```
 
 The resulting `.jar` file will be located in the `target/` folder.
 
-You can also find `SNAPSHOT` builds of the latest and greatest changes to the master branch in the SonaType snapshots repository.
+You can also find `SNAPSHOT` builds of the latest and greatest changes on the master branch in the SonaType snapshots repository.
 
 To add that snapshot repository to your Maven pom.xml use the following snippet:
 ```xml
@@ -43,7 +43,7 @@ To add that snapshot repository to your Maven pom.xml use the following snippet:
 
 ## Usage Example
 
-The example below shows how to use the module to create a mule container with a deployed application in a Junit test class.
+The example below shows how to use the module to create a Mule container with a deployed application in a JUnit test class.
 
 ```java
 
