@@ -1,4 +1,4 @@
-package com.mariocairone.testcontainers.mule;
+package com.mariocairone.mule.testcontainers;
 
 import java.io.File;
 import java.io.FileFilter;
