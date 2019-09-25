@@ -155,7 +155,8 @@ public class ApiWaitStrategy extends AbstractWaitStrategy {
 	/**
 	 * Add HTTP Query Parameters.
 	 *
-	 * @param queryParams the query parameter
+	 * @param name the query parameter name
+	 * @param value the query parameter value
 	 * @return this
 	 */
 	public ApiWaitStrategy withQueryParam(String name, String value) {
@@ -166,7 +167,8 @@ public class ApiWaitStrategy extends AbstractWaitStrategy {
 	/**
 	 * Add HTTP headers.
 	 *
-	 * @param headers the http headers
+	 * @param name the http header name
+	 * @param value the http header value
 	 * @return this
 	 */
 	public ApiWaitStrategy withHeader(String name, String value) {
@@ -177,7 +179,7 @@ public class ApiWaitStrategy extends AbstractWaitStrategy {
 	/**
 	 * Add HTTP body.
 	 *
-	 * @param headers the http headers
+	 * @param body the http body
 	 * @return this
 	 */
 	public ApiWaitStrategy withBody(String body) {
@@ -188,7 +190,7 @@ public class ApiWaitStrategy extends AbstractWaitStrategy {
 	/**
 	 * Add HTTP method.
 	 *
-	 * @param headers the http headers
+	 * @param method the http method
 	 * @return this
 	 */
 	public ApiWaitStrategy withMethod(String method) {
